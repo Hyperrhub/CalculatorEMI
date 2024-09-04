@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Arial', sans-serif; /* Use font from the banking website */
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.loan-calculator {
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 768px) {
+  .loan-calculator {
+    max-width: 600px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form {
+  display: grid;
+  gap: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.input-group {
+  margin-bottom: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333; /* Adjust based on the banking website's color scheme */
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff; /* Adjust based on the banking website's color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3; /* Adjust based on the banking website's color */
+}
+
+.loan-summary {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #007bff; /* Adjust based on the banking website's color */
+  border-radius: 5px;
+  background-color: #e9f7ff; /* Adjust based on the banking website's color */
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
 }
